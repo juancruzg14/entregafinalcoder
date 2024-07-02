@@ -1,0 +1,19 @@
+.contac {padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .recursoshumanos{display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        background-color:map-get($colores , color2 );
+        padding: 30px;
+        border-radius: 10%;}    
+        .humanos{width: 50px;}
+    .contactos{display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: map-get($colores , color2 );
+    padding: 10px;
+    border-radius: 10%;}
+    .ubicacion{width: 50px;}
+    }

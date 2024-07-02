@@ -1,0 +1,22 @@
+header{
+    background-color: map-get($colores , color1 );
+    width: 100%;
+    nav{display: flex;
+        justify-content: space-between;}
+        .navbar {padding-left: 10px;
+            display: flex;
+            gap: 1.5625rem;
+            list-style: none;
+            font-size: 1.25rem;
+            align-items: center;
+            :hover{font-size: x-large;
+            background-color: rgba(226, 128, 128, 0.842);
+            border-radius: 5%;}}
+            .logobaggio{width: 250px;}
+            .idioma {width: 60px;
+            float: right;}
+            .sesion{width: 60px;}
+            a{text-decoration: none;
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }}

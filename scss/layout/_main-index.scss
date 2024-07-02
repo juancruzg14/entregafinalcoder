@@ -1,0 +1,42 @@
+main {.marcas{display: flex;
+    justify-content: space-between;}
+    .principal {margin-top: 10px;
+        display: grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "item2 item1 item1 item1 item1 item3"
+        "item2 item1 item1 item1 item1 item3"
+        "item2 item1 item1 item1 item1 item3"
+        "item2 item1 item1 item1 item1 item3"}
+    .imgs{margin-top: 10px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4";}
+    .principal{.imgprincipal{grid-area: item1;
+        width: 900px;}
+    article{
+            color: black;
+            text-align: center;
+            background-color:map-get($colores , color2 );
+            font-size: x-large;
+            }
+    .art1 {border-left: 10px;
+        grid-area: item2;
+        height: min-content;
+        border-radius: 6%;}
+    .art2 {grid-area: item3;
+        height: min-content;
+        border-radius: 6%;}}
+    .imagen1{grid-area: img1;
+    @include imgsindex}
+    .imagen2{grid-area: img2;
+    @include imgsindex}
+    .imagen3{grid-area: img3;
+    @include imgsindex}
+    .imagen4{grid-area: img4;
+    @include imgsindex;}
+    }

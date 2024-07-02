@@ -1,0 +1,12 @@
+main .historia{
+    padding: 10px;
+    line-height: 200%;
+    color: black;
+    text-align:justify;
+    background-color: map-get($colores , color2 );
+    font-size: medium;
+::first-letter{font-size: larger};
+.historia2 img{
+width: 49%;
+padding-top: 25px;}
+}

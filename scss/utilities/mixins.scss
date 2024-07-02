@@ -1,0 +1,11 @@
+@mixin imgsindex {width: 100%;
+    height: 55vh;}
+@mixin headermq ($gap,$list-style,$font,$aling,$padding-left) 
+{
+display: flex;
+gap:$gap;
+list-style:$list-style;
+font-size: $font;
+align-items: $aling;
+padding-left:$padding-left ;
+}

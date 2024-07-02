@@ -1,253 +1,365 @@
-*{ margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-header{
-    background-color: red;
-    width: 100%;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.logobaggio{width: 250px;}
-nav{display: flex;
-justify-content: space-between;}
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-.navbar {padding-left: 10px;
-display: flex;
-gap: 1.5625rem;
-list-style: none;
-font-size: 1.25rem;
-align-items: center;
-:hover{font-size: x-large;
-background-color: rgba(226, 128, 128, 0.842);
-border-radius: 5%;}}
-
-.idioma {width: 60px;
-float: right;}
-.sesion{width: 60px;}
-
-
-.marcas{display: flex;
-justify-content: space-between;}
-
-
-.principal {margin-top: 10px;
-display: grid;
-grid-template-columns:repeat(6,1fr);
-grid-template-rows: repeat(4,1fr);
-grid-template-areas: 
-"item2 item1 item1 item1 item1 item3"
-"item2 item1 item1 item1 item1 item3"
-"item2 item1 item1 item1 item1 item3"
-"item2 item1 item1 item1 item1 item3"
-;}
-.imgs{margin-top: 10px;
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas:
-"img1 img2"
-"img3 img4";}
-
-.imgprincipal{grid-area: item1;
-width: 900px;}
-.art1 {border-left: 10px;
-grid-area: item2;
-height: min-content;
-border-radius: 6%;}
-.art2 {grid-area: item3;
-height: min-content;
-border-radius: 6%;}
-
-.imagen1{grid-area: img1;
-width: 100%;
-height: 55vh;}
-.imagen2{grid-area: img2;
-width: 100%;
-height: 55vh;}
-.imagen3{grid-area: img3;
-width:100%;
-height: 60vh;}
-.imagen4{grid-area: img4;
-width: 100%;
-height: 60vh;}
-
-.contac{padding: 40px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;}
-
-.contactos{display: flex;
-flex-direction: column;
-justify-content: space-around;
-background-color: rgba(226, 128, 128, 0.842);
-padding: 10px;
-border-radius: 10%;}
-
-.recursoshumanos{display: flex;
-flex-direction: column;
-gap: .625rem;
-background-color: rgba(226, 128, 128, 0.842);
-padding: 30px;
-border-radius: 10%;}
-
-footer{ 
-background-color: red;}
-.redes{ 
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-gap: .625rem;}
-.facebook{width: 40px}
-.instagram{width: 40px;}
-.tik-tok{width: 40px;}
-.linkedin{width: 40px;}
-
-.procesos{width: 49%;}
-.produccion{
-    padding: 10px;
-    line-height: 200%;
-    color: black;
-    text-align:justify;
-    background-color: rgba(226, 128, 128, 0.842);
-    font-size: large;}
-
-.historia{
-    padding: 10px;
-    line-height: 200%;
-    color: black;
-    text-align:justify;
-    background-color: rgba(226, 128, 128, 0.842);
-    font-size: medium;
-::first-letter{font-size: larger};}
-
-
-.historia2 img{
-width: 49%;
-padding-top: 25px;}
-
-
-
-.iniciarsesion{width: 100%;
-    height: 100vh;
+header {
+  background-color: #ff0000;
+  width: 100%; }
+  header nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgba(226, 128, 128, 0.842);}
-
-article{
-color: black;
-text-align: center;
-background-color: rgba(226, 128, 128, 0.842);
-font-size: x-large;
-}
-a{text-decoration: none;
+    justify-content: space-between; }
+  header .navbar {
+    padding-left: 10px;
+    display: flex;
+    gap: 1.5625rem;
+    list-style: none;
+    font-size: 1.25rem;
+    align-items: center; }
+    header .navbar :hover {
+      font-size: x-large;
+      background-color: rgba(226, 128, 128, 0.842);
+      border-radius: 5%; }
+  header .logobaggio {
+    width: 250px; }
+  header .idioma {
+    width: 60px;
+    float: right; }
+  header .sesion {
+    width: 60px; }
+  header a {
+    text-decoration: none;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.humanos{width: 50px;}
-.ubicacion{width: 50px;}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-@media (max-width:48rem)
-{header{width: 100%;
+main .marcas {
+  display: flex;
+  justify-content: space-between; }
+
+main .principal {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "item2 item1 item1 item1 item1 item3" "item2 item1 item1 item1 item1 item3" "item2 item1 item1 item1 item1 item3" "item2 item1 item1 item1 item1 item3"; }
+
+main .imgs {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img1 img2" "img3 img4"; }
+
+main .principal .imgprincipal {
+  grid-area: item1;
+  width: 900px; }
+
+main .principal article {
+  color: black;
+  text-align: center;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: x-large; }
+
+main .principal .art1 {
+  border-left: 10px;
+  grid-area: item2;
+  height: min-content;
+  border-radius: 6%; }
+
+main .principal .art2 {
+  grid-area: item3;
+  height: min-content;
+  border-radius: 6%; }
+
+main .imagen1 {
+  grid-area: img1;
+  width: 100%;
+  height: 55vh; }
+
+main .imagen2 {
+  grid-area: img2;
+  width: 100%;
+  height: 55vh; }
+
+main .imagen3 {
+  grid-area: img3;
+  width: 100%;
+  height: 55vh; }
+
+main .imagen4 {
+  grid-area: img4;
+  width: 100%;
+  height: 55vh; }
+
+.contac {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .contac .recursoshumanos {
     display: flex;
-    flex-direction: column;}
-.navbar{display: flex;
-    font-size: small;}
-nav {padding: 20px;
-    gap: 5px;
-    flex-direction: column;}
-.logobaggio{width: 40%;}
-.sesion{width: 10%;
-    display: flex;}
-.idioma{width: 30px;}
-footer{display: flex;
-flex-direction: column;
-align-items: center;
-font-size: auto;}
-.facebook {height: 20px;
-width: 20px;} 
-.linkedin{height: 20px;
-    width: 20px;}
-.tik-tok{height: 20px;
-    width: 20px;}
-.instagram{height: 20px;
-    width: 20px;}
-
-
-    .historia{
-        padding: auto;
-        width: auto;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        text-align:justify;
-        background-color: rgba(226, 128, 128, 0.842);
-        font-size:small;}
-    .historia2 img{
-        width: 50%;
-        height: auto;
-        padding-top: 5px;}
-
-    .procesos{width: 300px;}
-    .produccion{
-            padding: 10px;
-            line-height: 200%;
-            color: black;
-            text-align:justify;
-            background-color: rgba(226, 128, 128, 0.842);
-            font-size: small;}
-    .iniciarsesion{font-size: small;}}
-
-    @media (max-width:22.5rem)
-    {header{width: 100%;
-        display: flex;
-        flex-direction: column;}
-    .navbar{display: flex;
-        flex-direction: column;
-        font-size: small;}
-    nav {padding: 20px;
-        gap: .625rem;
-        flex-direction: column;}
-    .logobaggio{width: 40%;}
-    .sesion{width: 10%;
-        display: flex;}
-    .idioma{width: 30px;}
-    footer{display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: auto;}
-    .facebook {height: 20px;
-    width: 20px;} 
-    .linkedin{height: 20px;
-        width: 20px;}
-    .tik-tok{height: 20px;
-        width: 20px;}
-    .instagram{height: 20px;
-        width: 20px;}
-    
-    
-        .historia{
-            padding: auto;
-            width: auto;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            text-align:justify;
-            background-color: rgba(226, 128, 128, 0.842);
-            font-size:xx-small;}
-        .historia2 img{
-            width: 50%;
-            height: auto;
-            padding-top: 5px;}
-    
-        .procesos{width: 49%;}
-        .produccion{
-                padding: 10px;
-                line-height: 200%;
-                color: black;
-                text-align:justify;
-                background-color: rgba(226, 128, 128, 0.842);
-                font-size: x-small;}}
+    gap: .625rem;
+    background-color: rgba(226, 128, 128, 0.842);
+    padding: 30px;
+    border-radius: 10%; }
+  .contac .humanos {
+    width: 50px; }
+  .contac .contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(226, 128, 128, 0.842);
+    padding: 10px;
+    border-radius: 10%; }
+  .contac .ubicacion {
+    width: 50px; }
+
+main .produccion {
+  padding: 10px;
+  line-height: 200%;
+  color: black;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: large; }
+
+main .procesos {
+  width: 49%; }
+
+main .historia {
+  padding: 10px;
+  line-height: 200%;
+  color: black;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: medium; }
+  main .historia ::first-letter {
+    font-size: larger; }
+  main .historia .historia2 img {
+    width: 49%;
+    padding-top: 25px; }
+
+footer {
+  background-color: #ff0000; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: .625rem; }
+
+.facebook {
+  width: 40px; }
+
+.instagram {
+  width: 40px; }
+
+.tik-tok {
+  width: 40px; }
+
+.linkedin {
+  width: 40px; }
+
+@media (max-width: 48rem) {
+  header {
+    background-color: #ff0000;
+    width: 100%; }
+    header nav {
+      display: flex;
+      justify-content: space-between; }
+    header .navbar {
+      display: flex;
+      gap: 1.25rem;
+      list-style: none;
+      font-size: 1.125rem;
+      align-items: center;
+      padding-left: 0.625rem; }
+      header .navbar :hover {
+        font-size: x-large;
+        background-color: rgba(226, 128, 128, 0.842);
+        border-radius: 5%; }
+    header .logobaggio {
+      width: 250px; }
+    header .idioma {
+      width: 60px;
+      float: right; }
+    header .sesion {
+      width: 60px; }
+    header a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  footer {
+    background-color: #ff0000; }
+  footer.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: .625rem; }
+  .facebook {
+    height: 20px;
+    width: 20px; }
+  .linkedin {
+    height: 20px;
+    width: 20px; }
+  .tik-tok {
+    height: 20px;
+    width: 20px; }
+  .instagram {
+    height: 20px;
+    width: 20px; } }
+
+.historia {
+  padding: auto;
+  width: auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: small; }
+
+.historia2 img {
+  width: 50%;
+  height: auto;
+  padding-top: 5px; }
+
+.procesos {
+  width: 300px; }
+
+.produccion {
+  padding: 10px;
+  line-height: 200%;
+  color: black;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: small; }
+
+.iniciarsesion {
+  font-size: small; }
+
+.contac {
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.recursoshumanos {
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+  background-color: rgba(226, 128, 128, 0.842);
+  padding: 20px;
+  border-radius: 10%;
+  font-size: xx-small; }
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(226, 128, 128, 0.842);
+  padding: 8px;
+  border-radius: 10%;
+  font-size: x-small; }
+
+@media (max-width: 22.5rem) {
+  header {
+    background-color: #ff0000;
+    width: 100%; }
+    header nav {
+      display: flex;
+      justify-content: space-between; }
+    header .navbar {
+      display: flex;
+      gap: 0.9375rem;
+      list-style: none;
+      font-size: small;
+      align-items: center;
+      padding-left: 0.625rem; }
+      header .navbar :hover {
+        font-size: x-large;
+        background-color: rgba(226, 128, 128, 0.842);
+        border-radius: 5%; }
+    header .logobaggio {
+      width: 250px; }
+    header .idioma {
+      width: 60px;
+      float: right; }
+    header .sesion {
+      width: 60px; }
+    header a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  footer {
+    background-color: #ff0000; }
+  footer.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: .625rem; }
+  .facebook {
+    height: 20px;
+    width: 20px; }
+  .linkedin {
+    height: 20px;
+    width: 20px; }
+  .tik-tok {
+    height: 20px;
+    width: 20px; }
+  .instagram {
+    height: 20px;
+    width: 20px; } }
+
+.historia {
+  padding: auto;
+  width: auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: xx-small; }
+
+.historia2 img {
+  width: 50%;
+  height: auto;
+  padding-top: 5px; }
+
+.procesos {
+  width: 49%; }
+
+.produccion {
+  padding: 10px;
+  line-height: 200%;
+  color: black;
+  text-align: justify;
+  background-color: rgba(226, 128, 128, 0.842);
+  font-size: x-small; }
+
+.contac {
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.recursoshumanos {
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+  background-color: rgba(226, 128, 128, 0.842);
+  padding: 20px;
+  border-radius: 10%;
+  font-size: xx-small; }
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(226, 128, 128, 0.842);
+  padding: 8px;
+  border-radius: 10%;
+  font-size: xx-small; }

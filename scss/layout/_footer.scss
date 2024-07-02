@@ -1,0 +1,11 @@
+footer{
+    background-color: map-get($colores , color1)}
+    .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: .625rem;}
+.facebook{width: 40px}
+.instagram{width: 40px;}
+.tik-tok{width: 40px;}
+.linkedin{width: 40px;}
