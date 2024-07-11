@@ -8,70 +8,106 @@
             :hover{font-size: x-large;
             background-color: rgba(226, 128, 128, 0.842);
             border-radius: 5%;}}
-            .logobaggio{width: 250px;}
-            .idioma {width: 60px;
+            .logobaggio{width: 200px;}
+            .idioma {width: 40px;
             float: right;}
-            .sesion{width: 60px;}
+            .sesion{width: 40px;}
             a{text-decoration: none;
                 color: white;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 }}
 footer{
-    background-color: map-get($colores , color1)}
-footer.redes{ 
+    background-color: map-get($colores , color1);}
+    .redes{ 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: .625rem;}
-.facebook {height: 20px;
+    .facebook {height: 20px;
     width: 20px;} 
-.linkedin{height: 20px;
+    .linkedin{height: 20px;
     width: 20px;}
-.tik-tok{height: 20px;
+    .tik-tok{height: 20px;
     width: 20px;}
-.instagram{height: 20px;
-    width: 20px;}}
+    .instagram{height: 20px;
+    width: 20px;}
 
-
-    .historia{
-        padding: auto;
-        width: auto;
+main .historia{
+        padding: 10px;
+        line-height: 200%;
         color: black;
-        display: flex;
-        flex-direction: column;
         text-align:justify;
-        background-color: rgba(226, 128, 128, 0.842);
-        font-size:small;}
+        background-color: map-get($colores , color2 );
+        font-size: x-small;
+    ::first-letter{font-size: larger};
     .historia2 img{
-        width: 50%;
-        height: auto;
-        padding-top: 5px;}
-    .procesos{width: 300px;}
-    .produccion{
-            padding: 10px;
-            line-height: 200%;
-            color: black;
-            text-align:justify;
-            background-color: rgba(226, 128, 128, 0.842);
-            font-size: small;}
-    .iniciarsesion{font-size: small;}
-    .contac {
-        padding: 10%;
+    width: 49%;
+    padding-top: 25px;}
+    }
+main .produccion{
+        padding: 5px;
+        line-height: 200%;
+        color: black;
+        text-align:justify;
+        background-color: map-get($colores , color2 );
+        font-size: small;}
+main .procesos{width: 49%;}
+.contac {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .recursoshumanos{font-size: xx-small;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-    .recursoshumanos{display: flex;
         flex-direction: column;
         gap: .3125rem;
-        background-color: rgba(226, 128, 128, 0.842);
-        padding: 20px;
-        border-radius: 10%;
-    font-size:xx-small;}
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: rgba(226, 128, 128, 0.842);
-        padding: 8px;
-        border-radius: 10%; 
-        font-size: x-small;}
+        background-color:map-get($colores , color2 );
+        padding: auto;
+        border-radius: 10%;}    
+        .humanos{width: 30px;}
+    .contactos{font-size: xx-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: map-get($colores , color2 );
+    padding: auto;
+    border-radius: 10%;}
+    .ubicacion{width: 30px;}
+    }
+main {.marcas{display: flex;
+        justify-content: space-between;}
+        img{width: 15%;}
+    .principal {margin-top: 10px;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: 1fr 1fr auto auto;
+            grid-template-areas: 
+            "item1 item1 item1 item1"
+            "item1 item1 item1 item1"
+            "item3 item3 item3 item3"
+            "item2 item2 item2 item2"}
+    .imgs{margin-top: 5px;
+            display:flex;
+            flex-direction: column;}
+    .principal{.imgprincipal{grid-area: item1;
+            width: 100%;}
+    article{
+                color: black;
+                text-align: center;
+                background-color:map-get($colores , color2 );
+                font-size: medium;
+                }
+    .art1 {grid-area: item2;
+            height: min-content;
+            border-radius: 3%;}
+    .art2 {grid-area: item3;
+            height: min-content;
+            border-radius: 3%;}}
+    .imagen1{width: 100%;
+            height: 100%;}
+    .imagen2{width: 100%;
+        height: 100%;}
+    .imagen3{width: 100%;
+        height: 100%;}
+    .imagen4{width: 100%;
+        height: 100%;}
+        }}

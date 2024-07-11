@@ -1,5 +1,6 @@
 main {.marcas{display: flex;
-    justify-content: space-between;}
+    justify-content:space-around;}
+        img{width: 10%;}
     .principal {margin-top: 10px;
         display: grid;
         grid-template-columns:repeat(6,1fr);
@@ -17,19 +18,19 @@ main {.marcas{display: flex;
         "img1 img2"
         "img3 img4";}
     .principal{.imgprincipal{grid-area: item1;
-        width: 900px;}
+        width: 100%;}
     article{
             color: black;
             text-align: center;
             background-color:map-get($colores , color2 );
-            font-size: x-large;
+            font-size: large;
             }
     .art1 {border-left: 10px;
         grid-area: item2;
-        height: min-content;
+        height: 100%;
         border-radius: 6%;}
     .art2 {grid-area: item3;
-        height: min-content;
+        height: 100%;
         border-radius: 6%;}}
     .imagen1{grid-area: img1;
     @include imgsindex}
