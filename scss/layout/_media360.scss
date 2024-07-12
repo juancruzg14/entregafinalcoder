@@ -52,25 +52,27 @@ main .produccion{
             background-color: map-get($colores , color2 );
             font-size: small;}
 main .procesos{width: 49%;}
-    .contac {padding: 40%;
+.contac {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .recursoshumanos{font-size: xx-small;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .recursoshumanos{display: flex;
-            flex-direction: column;
-            gap: .3125rem;
-            background-color:map-get($colores , color2 );
-            padding: auto;
-            border-radius: 10%;}    
-            .humanos{width: 20px;}
-        .contactos{display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        background-color: map-get($colores , color2 );
+        gap: .3125rem;
+        background-color:map-get($colores , color2 );
         padding: auto;
-        border-radius: 10%;}
-        .ubicacion{width: 20px;}
-        }
+        border-radius: 10%;}    
+        .humanos{width: 30px;}
+    .contactos{font-size: xx-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: map-get($colores , color2 );
+    padding: auto;
+    border-radius: 10%;}
+    .ubicacion{width: 30px;}
+    }
 main {.marcas{display: flex;
             justify-content: space-between;}
             img{width: 15%;}
